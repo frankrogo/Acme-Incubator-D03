@@ -28,7 +28,9 @@ public class AdministratorNoticeShowService implements AbstractShowService<Admin
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "header", "title", "creationMoment", "deadline", "body", "links");
+		request.unbind(entity, model, "header", "title", "creationMoment", "deadline", "body");
+		String[] links = entity.getLinks().split(",");
+		model.setAttribute("links", links);
 	}
 
 	@Override
