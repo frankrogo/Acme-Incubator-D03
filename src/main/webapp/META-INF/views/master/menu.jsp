@@ -41,7 +41,23 @@
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.list-notice" action="/administrator/notice/list" />
+			<acme:menu-suboption code="master.menu.administrator.create-notice" action="/administrator/notice/create" />
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-technology-record" action="/administrator/technology-record/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-technology-record" action="/administrator/technology-record/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.list-tool-record" action="/administrator/tool-record/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-tool-record" action="/administrator/tool-record/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.list-inquiry" action="/administrator/inquiry/list" />
+			<acme:menu-suboption code="master.menu.administrator.create-inquiry" action="/administrator/inquiry/create" />
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-overture" action="/administrator/overture/list" />
+			<acme:menu-suboption code="master.menu.administrator.create-overture" action="/administrator/overture/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.list-challenge" action="/administrator/challenge/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-challenge" action="/administrator/challenge/create" />
+			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.configuration" action="/administrator/configuration/show" />	
 		</acme:menu-option>
 		
