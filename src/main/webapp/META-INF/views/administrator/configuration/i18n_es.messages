@@ -1,0 +1,3 @@
+administrator.configuration.form.label.spamWords = Palabras spam:
+administrator.configuration.form.label.activitySectors = Sectores de actividad:
+administrator.configuration.form.label.spamThreshold =  Límite de spam:

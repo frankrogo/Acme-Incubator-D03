@@ -1,0 +1,12 @@
+administrator.notice.form.label.header = Cabecera:
+administrator.notice.form.label.title = Título:
+administrator.notice.form.label.creationMoment = Fecha de creación:
+administrator.notice.form.label.deadline = Fecha límite:
+administrator.notice.form.label.body = Cuerpo:
+administrator.notice.form.label.links = Noticias relacionadas:
+administrator.notice.form.button.return = Volver
+
+
+administrator.notice.list.label.title = Título
+administrator.notice.list.label.creationMoment = Fecha de creación
+administrator.notice.list.label.deadline = Fecha límite
