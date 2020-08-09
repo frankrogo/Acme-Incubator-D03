@@ -39,12 +39,14 @@ public class Inquiry extends DomainEntity {
 	@NotBlank
 	private String				description;
 
-	@NotNull
+	
 	@Valid
+	@NotNull
 	private Money				minMoney;
 
-	@NotNull
+	
 	@Valid
+	@NotNull
 	private Money				maxMoney;
 
 	@Email
