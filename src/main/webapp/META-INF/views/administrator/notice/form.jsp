@@ -20,7 +20,7 @@
 	<acme:form-textarea code="administrator.notice.form.label.body" path="body"/>
 	
 	<jstl:if test="${command == 'create'}">
-			<acme:form-textarea code="administrator.notice.form.label.links" path="links"/>
+			<acme:form-textarea placeholder="url,url,url,...," code="administrator.notice.form.label.links" path="links"/>
 	</jstl:if>
 	
 	<jstl:if test="${command == 'show'}">
