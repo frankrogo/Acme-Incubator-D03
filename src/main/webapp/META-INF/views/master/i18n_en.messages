@@ -35,7 +35,6 @@ master.menu.anonymous.favourite-link.serperrui1 = Favourite link of serperrui1
 
 master.menu.anonymous.perea-bulletin.list =  List Perea bulletins
 master.menu.anonymous.perea-bulletin.create = New Perea bulletin
-
 master.menu.anonymous.rodriguez-bulletin.list =  List Rodriguez bulletins
 master.menu.anonymous.rodriguez-bulletin.create = New Rodriguez bulletin
 
@@ -57,10 +56,23 @@ master.menu.authenticated.list-challenge = List challenges
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
+
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 
 master.menu.administrator.list-notice = List notices
+master.menu.administrator.list-technology-record = List technology records
+master.menu.administrator.list-tool-record = List tool records
+master.menu.administrator.list-inquiry = List inquiries
+master.menu.administrator.list-overture = List overtures
+master.menu.administrator.list-challenge = List challenges
+master.menu.administrator.create-notice = Create notice
+master.menu.administrator.create-technology-record = Create technology record
+master.menu.administrator.create-tool-record = Create tool record
+master.menu.administrator.create-inquiry = Create inquiry
+master.menu.administrator.create-overture = Create overture
+master.menu.administrator.create-challenge = Create challenge
+
 master.menu.administrator.configuration = Customisation parameters
 
 # master.menu.provider ########################################################
