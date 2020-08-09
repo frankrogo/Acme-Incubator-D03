@@ -75,7 +75,7 @@ public class AdministratorOvertureUpdateService implements AbstractUpdateService
 
 		boolean eurMin, eurMax, maxMoreThanMin;
 
-		if (!errors.hasErrors("minMoney")) {
+		if (!errors.hasErrors("minMoney") && maxMoney != null) {
 			eurMin = minMoney.getCurrency().equals("EUR") || minMoney.getCurrency().equals("€");
 			errors.state(request, eurMin, "minMoney", "administrator.overture.error.minMoney");
 			maxMoreThanMin = maxMoney.getAmount() > minMoney.getAmount();
