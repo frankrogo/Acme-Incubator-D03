@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.overture;
+package acme.features.administrator.overture;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -7,14 +7,14 @@ import org.springframework.stereotype.Service;
 import acme.entities.overtures.Overture;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedOvertureShowService implements AbstractShowService<Authenticated, Overture> {
+public class AdministratorOvertureShowService implements AbstractShowService<Administrator, Overture> {
 
 	@Autowired
-	AuthenticatedOvertureRepository repository;
+	AdministratorOvertureRepository repository;
 
 
 	@Override
@@ -29,8 +29,8 @@ public class AuthenticatedOvertureShowService implements AbstractShowService<Aut
 		assert entity != null;
 		assert model != null;
 		request.unbind(entity, model, "title", "creationMoment", "deadline", "description", "minMoney", "maxMoney", "email");
-
 	}
+
 	@Override
 	public Overture findOne(final Request<Overture> request) {
 		assert request != null;

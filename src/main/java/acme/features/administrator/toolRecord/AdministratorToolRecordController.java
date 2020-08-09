@@ -1,5 +1,5 @@
 
-package acme.features.administrator.notice;
+package acme.features.administrator.toolRecord;
 
 import javax.annotation.PostConstruct;
 
@@ -7,21 +7,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.notices.Notice;
+import acme.entities.toolRecords.ToolRecord;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/administrator/notice/")
-public class AdministratorNoticeController extends AbstractController<Administrator, Notice> {
+@RequestMapping("/administrator/tool-record/")
+public class AdministratorToolRecordController extends AbstractController<Administrator, ToolRecord> {
 
 	@Autowired
-	private AdministratorNoticeListService		listService;
+	private AdministratorToolRecordListService		listService;
 	@Autowired
-	private AdministratorNoticeShowService		showService;
+	private AdministratorToolRecordShowService		showService;
 	@Autowired
-	private AdministratorNoticeCreateService	createService;
+	private AdministratorToolRecordCreateService	createService;
+	@Autowired
+	private AdministratorToolRecordUpdateService	updateService;
+	@Autowired
+	private AdministratorToolRecordDeleteService	deleteService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -31,6 +35,9 @@ public class AdministratorNoticeController extends AbstractController<Administra
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
+
 	}
 
 }
