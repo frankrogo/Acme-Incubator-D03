@@ -64,7 +64,6 @@ public class AdministratorInquiryUpdateService implements AbstractUpdateService<
 
 		if (!errors.hasErrors("deadline")) {
 			calendar = new GregorianCalendar();
-			calendar.add(Calendar.DAY_OF_MONTH, +7);
 			minimumDeadline = calendar.getTime();
 			boolean future = entity.getDeadline().after(minimumDeadline);
 			errors.state(request, future, "deadline", "administrator.inquiry.error.future-deadline");
@@ -76,7 +75,7 @@ public class AdministratorInquiryUpdateService implements AbstractUpdateService<
 
 		boolean eurMin, eurMax, maxMoreThanMin;
 
-		if (!errors.hasErrors("minMoney")&& maxMoney!=null) {
+		if (!errors.hasErrors("minMoney") && maxMoney != null) {
 			maxMoreThanMin = maxMoney.getAmount() > minMoney.getAmount();
 			errors.state(request, maxMoreThanMin, "maxMoney", "administrator.inquiry.error.maxMoreThanMin");
 		}
