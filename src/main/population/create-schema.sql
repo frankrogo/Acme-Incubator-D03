@@ -77,7 +77,7 @@
         `body` varchar(255),
         `creation_moment` datetime(6),
         `deadline` datetime(6),
-        `header` varchar(255),
+        `header_image` varchar(255),
         `links` varchar(255),
         `title` varchar(255),
         primary key (`id`)

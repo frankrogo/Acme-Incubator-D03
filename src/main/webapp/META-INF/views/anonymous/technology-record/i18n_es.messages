@@ -9,5 +9,7 @@ anonymous.technology-record.form.label.source = Tipo de código:
 anonymous.technology-record.form.button.return = Volver
 
 
-anonymous.technology-record.list.label.title = Título
-anonymous.technology-record.list.label.inventorName = Nombre del inventor
+authenticated.technology-record.list.label.sector= Sector
+authenticated.technology-record.list.label.stars = Estrellas
+authenticated.technology-record.list.label.title = Título
+authenticated.technology-record.list.label.inventorName = Nombre del inventor
