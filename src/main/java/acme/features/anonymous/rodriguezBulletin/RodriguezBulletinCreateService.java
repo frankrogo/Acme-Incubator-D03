@@ -51,8 +51,6 @@ public class RodriguezBulletinCreateService implements AbstractCreateService<Ano
 		res = new rodriguezBulletin();
 		moment = new Date(System.currentTimeMillis() - 1);
 
-		res.setAuthor("Frank");
-		res.setDescription("This is my bulletin");
 		res.setMoment(moment);
 		return res;
 	}

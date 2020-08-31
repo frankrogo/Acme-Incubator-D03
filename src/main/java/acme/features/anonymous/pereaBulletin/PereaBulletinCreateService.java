@@ -51,8 +51,7 @@ public class PereaBulletinCreateService implements AbstractCreateService<Anonymo
 		res = new pereaBulletin();
 		moment = new Date(System.currentTimeMillis() - 1);
 
-		res.setTitle("How to make awesome news");
-		res.setBody("This is the first step to learn properly:");
+
 		res.setMoment(moment);
 		return res;
 	}
