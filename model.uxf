@@ -308,7 +308,7 @@ has v</panel_attributes>
 pereaBulletin
 --
 + title: String {NotBlank}
-+ body: String {NotBlank}
++ body: String {NotBlank, Length = 1024}
 + moment: Date {Temporal(TIMESTAMP), Past}</panel_attributes>
     <additional_attributes/>
   </element>
@@ -324,7 +324,7 @@ pereaBulletin
 rodriguezBulletin
 --
 + author: String {NotBlank}
-+ description: String {NotBlank}
++ description: String {NotBlank, Length = 1024}
 + moment: Date {Temporal(TIMESTAMP), Past}</panel_attributes>
     <additional_attributes/>
   </element>
@@ -343,7 +343,7 @@ Notice
 + title: String {NotBlank}
 + creationMoment: Date {Temporal(TIMESTAMP), NotNull, Past}
 + deadline: Date {Temporal(TIMESTAMP), NotNull}
-+ body: String {NotBlank}
++ body: String {NotBlank, Length = 1024}
 + link: String {URL}
 
 
@@ -365,7 +365,7 @@ Inquiry
 + title: String {NotBlank}
 + creationMoment: Date {Temporal(TIMESTAMP), NotNull, Past}
 + deadline: Date {Temporal(TIMESTAMP), NotNull}
-+ description: String {NotBlank}
++ description: String {NotBlank, Length = 1024}
 + maxMoney: Money {NotNull, Valid}
 + minMoney: Money {NotNull, Valid}
 + email: String {NotBlank, Email}
@@ -389,7 +389,7 @@ Overture
 + title: String {NotBlank}
 + creationMoment: Date {Temporal(TIMESTAMP), NotNull, Past}
 + deadline: Date {Temporal(TIMESTAMP), NotNull}
-+ description: String {NotBlank}
++ description: String {NotBlank, Length = 1024}
 + maxMoney: Money {NotNull, Valid}
 + minMoney: Money {NotNull, Valid}
 + email: String {NotBlank, Email}
@@ -413,7 +413,7 @@ TechnologyRecord
 + title: String {NotBlank}
 + sector: String {NotBlank}
 + inventorName: String {NotBlank}
-+ description: String {NotBlank}
++ description: String {NotBlank, Length = 1024}
 + website: String {URL, NotBlank}
 + email: String {NotBlank, Email}
 + stars: Integer {Range(min = -5, max = 5)}
@@ -438,7 +438,7 @@ ToolRecord
 + title: String {NotBlank}
 + sector: String {NotBlank}
 + inventorName: String {NotBlank}
-+ description: String {NotBlank}
++ description: String {NotBlank, Length = 1024}
 + website: String {URL, NotBlank}
 + email: String {NotBlank, Email}
 + stars: Integer {Range(min = -5, max = 5)}
@@ -455,14 +455,14 @@ ToolRecord
       <x>675</x>
       <y>1287</y>
       <w>387</w>
-      <h>189</h>
+      <h>171</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Challenge
 --
 + title: String {NotBlank}
 + deadline: Date {Temporal(TIMESTAMP), NotNull}
-+ description: String {NotBlank}
++ description: String {NotBlank, Length = 1024}
 + rookieGoal: String {NotBlank}
 + rookieReward: Money {NotNull, Valid}
 + averageGoal: String {NotBlank}
